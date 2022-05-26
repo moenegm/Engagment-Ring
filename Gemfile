@@ -4,11 +4,13 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 ruby "3.0.3"
 gem "rails", "7.0.3"
 
-gem "sprockets-rails"
+gem 'devise'
+gem 'pg', '~> 1.3', '>= 1.3.5'
 gem 'libv8-node', '~> 16.10'
 gem "image_processing", ">= 1.2"
+
 gem 'public_activity', '~> 2.0'
-gem 'pg', '~> 1.3', '>= 1.3.5'
+gem "sprockets-rails"
 gem "puma", "~> 5.0"
 gem "importmap-rails"
 gem "turbo-rails"
